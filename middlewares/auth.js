@@ -3,7 +3,7 @@ let express = require('express');
 let sess = require('express-session');
 let router = express.Router();
 
-router.all('/api/v1/*', function (req, res, next) {
+router.all('/*', function (req, res, next) {
     sess = req.session;
 
     if (!sess.userId) {
