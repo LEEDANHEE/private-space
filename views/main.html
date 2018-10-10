@@ -15,6 +15,20 @@
     <!-- Custom styles for this template -->
     <link href="./css/navbar-top-fixed.css" rel="stylesheet">
 
+    <style>
+        .card-text {
+            display: -webkit-box;
+
+            /* Fallback for non-webkit */
+            margin: 0 auto;
+
+            line-height: 1.4;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +41,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Post<span class="sr-only"></span></a>
+                    <a class="nav-link" href="#">Post
+                        <span class="sr-only"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Album</a>
@@ -43,39 +59,124 @@
         </div>
     </nav>
     <main role="main" class="container">
-        <div class="card-deck text-center">
+        <div class="card-deck">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-body" style="height: 20rem">
-                        <h4 class="card-title">1 Card title</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <img class="card-img-top" src="http://cfile204.uf.daum.net/image/2130D54752F441C830C52C" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
+            </div>
 
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="http://cfile233.uf.daum.net/C200x180/22442F4253DC95D235F241" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+                        <span class="badge badge-pill badge-info">Info</span>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-body" style="height: 20rem">
-                        <h4 class="card-title">2 Card title</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <img class="card-img-top" src="http://cfile204.uf.daum.net/R400x0/2407E34752F441C60C8965" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            card has even longer content than the first to show that equal height action.
+                        </p>
+                        <div class="tag">
+                            <span class="badge badge-pill badge-info">테스트 태그</span>
+                            <span class="badge badge-pill badge-info">태그 테스트</span>
+                            <span class="badge badge-pill badge-info">ㅋㅋㅋㅋ 오늘은 행복한날 긴 텍스트 테스트</span>
+                            <span class="badge badge-pill badge-info">Info</span>
+                            <span class="badge badge-pill badge-info">Info</span>
+                            <span class="badge badge-pill badge-info">Info</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="//placehold.it/500x280" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
 
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="//placehold.it/500x280" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <span class="badge badge-pill badge-info">서울대공원</span>
+                        <span class="badge badge-pill badge-info">단풍구경</span>
+                        <span class="badge badge-pill badge-info">호랑이</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mb-4">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-body" style="height: 20rem">
-                        <h4 class="card-title">3 Card title</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <img class="card-img-top" src="//placehold.it/500x280" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            card has even longer content than the first to show that equal height action.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                            <div class="tag">
+                                    <span class="badge badge-pill badge-info">청계산</span>
+                                    <span class="badge badge-pill badge-info">나들이</span>
+                                    <span class="badge badge-pill badge-info">가즈아</span>
+                                </div>
+                        <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
             </div>
