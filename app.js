@@ -13,6 +13,7 @@ let auth = require('./middlewares/auth');
 /* router */
 let loginRouter = require('./routes/login-router');
 let loginApiRouter = require('./routes/login-session');
+let postApiRouter = require('./routes/post-router');
 
 let app = express();
 
@@ -33,6 +34,7 @@ app.use('/public/api/v1/', loginApiRouter);
 app.use('/main', auth, (req, res, next) => {
   return res.sendFile(path.join(__dirname, '/views/', 'main.html'));
 });
+app.use('/api/v1/post/', auth, postApiRouter);
 // app.use(auth);
 
 // catch 404 and forward to error handler
@@ -43,13 +45,14 @@ app.use(function (req, res, next) {
 // error handler
 app.use(function (err, req, res, next) {
 
-  let reqType = req.xhr ? 'AJAX' : 'HTTP';
+  let reqType = req.xhr ? 'AJAX' : 'NORMAL';
   console.log('[ERROR(' + reqType + '-' + err.status + ')REQUEST PATH]: ' + req.originalUrl);
 
   if (req.xhr) {
     console.log(err);
     switch (err.status) {
-      case '401':
+      case 401:
+        return res.status(err.status).json(err);
         break;
       default:
         return res.status(err.status).json(err);
